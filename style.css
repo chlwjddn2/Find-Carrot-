@@ -1,0 +1,103 @@
+body{
+    background-color: black;
+}
+
+button{
+    border: none;
+    cursor: pointer;   
+    outline: none;
+}
+
+.main{
+    background-image: url(/img/background.png);
+    width: 800px;
+    height: 500px;
+    background-size: cover;
+    display: flex;  
+    flex-direction: column;
+    border-radius: 16px;
+    margin: auto;
+}
+
+.main__header{ 
+    display: flex;  
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.start__btn{
+    border: 5px solid black ;
+    height: 50px;
+    width: 50px;
+    font-size: 24px;
+    margin-bottom: 8px;
+    background-color: bisque;
+    transition: 200ms ease-in-out;
+}
+
+.start__btn:hover{
+    transform: scale(1.1);
+}
+ 
+.timer{
+    width: 100px;
+    text-align: center;
+    border: 5px solid black;
+    font-size: 24px;
+    background-color: white;
+    margin-bottom: 8px;
+}
+
+.fleid{
+    width: 100%;
+    height: 100%;
+    
+}
+
+.counter{
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    font-size: 40px;
+    border-radius: 50%;
+    background-color: rgb(246, 178, 51);
+    color: white;
+    
+}
+
+.pop-up{
+    width: 400px;
+    height: 150px;
+    margin: auto;
+    text-align: center;
+    background-color: black;
+    transform: translateY(-120%);
+    opacity: 0.5;
+    border-radius: 30px;
+}
+
+.restart{  
+    width: 50px;
+    height: 50px;
+    font-size: 36px;
+    background-color:bisque;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: 200ms ease-in-out;
+}
+
+.restart:hover{
+    transform: scale(1.1);
+}
+
+
+.message{
+    color: white;
+    font-size: 36px;
+    margin-top: 20px;
+}
+
+
+
+
