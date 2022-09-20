@@ -47,9 +47,11 @@ button{
     font-size: 24px;
     background-color: white;
     margin-bottom: 8px;
+    visibility: hidden;
 }
 
 .fleid{
+    position: relative;
     width: 100%;
     height: 100%;
     
@@ -63,7 +65,7 @@ button{
     border-radius: 50%;
     background-color: rgb(246, 178, 51);
     color: white;
-    
+    visibility: hidden;
 }
 
 .pop-up{
@@ -71,10 +73,14 @@ button{
     height: 150px;
     margin: auto;
     text-align: center;
-    background-color: black;
+    background-color: #00000090;
     transform: translateY(-120%);
-    opacity: 0.5;
     border-radius: 30px;
+    display: block;
+}
+
+.pop-up-hidden{
+    display: none;
 }
 
 .restart{  
@@ -85,6 +91,7 @@ button{
     border-radius: 5px;
     margin-top: 20px;
     transition: 200ms ease-in-out;
+    border: 4px;
 }
 
 .restart:hover{
