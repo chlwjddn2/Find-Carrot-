@@ -2,9 +2,9 @@
 
 // 당근과 벌레 랜덤 배치
 const CARROT_SIZE = 110;
-const CARROT_COUNT = 5;
-const BUG_COUNT = 5;
-const GAME_SEC = 5;
+const CARROT_COUNT = 10;
+const BUG_COUNT = 10;
+const GAME_SEC = 10;
 
 const field = document.querySelector('.fleid');
 const fieldRect = field.getBoundingClientRect();
@@ -123,8 +123,8 @@ function initGame() {
     score = 0;
     field.innerHTML = '';
     scoreCount.innerText = CARROT_COUNT;
-    addItem('carrot', CARROT_COUNT, '/img/carrot.png');
-    addItem('bug', CARROT_COUNT, '/img/bug.png')
+    addItem('carrot', CARROT_COUNT, './img/carrot.png');
+    addItem('bug', BUG_COUNT, './img/bug.png')
 }
 
 function onFieldClick(event) {

@@ -9,7 +9,7 @@ button{
 }
 
 .main{
-    background-image: url(/img/background.png);
+    background-image: url(./img/background.png);
     width: 800px;
     height: 500px;
     background-size: cover;
@@ -48,6 +48,7 @@ button{
     background-color: white;
     margin-bottom: 8px;
     visibility: hidden;
+    user-select: none;
 }
 
 .fleid{
@@ -66,6 +67,7 @@ button{
     background-color: rgb(246, 178, 51);
     color: white;
     visibility: hidden;
+    user-select: none;
 }
 
 .pop-up{
@@ -103,6 +105,13 @@ button{
     color: white;
     font-size: 36px;
     margin-top: 20px;
+}
+
+.carrot:hover,
+.bug:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    user-select: none;
 }
 
 
