@@ -114,6 +114,18 @@ button{
     user-select: none;
 }
 
+@media screen and (max-width: 768px) {
+    .main{
+        background-image: url(./img/background.png);
+        width: 400px;
+        height: 896px;
+        background-size: cover;
+        display: flex;  
+        flex-direction: column;
+        border-radius: 16px;
+        margin: auto;
+    }
+}
 
 
 

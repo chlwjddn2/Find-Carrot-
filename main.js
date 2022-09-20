@@ -123,8 +123,8 @@ function initGame() {
     score = 0;
     field.innerHTML = '';
     scoreCount.innerText = CARROT_COUNT;
-    addItem('carrot', CARROT_COUNT, './img/carrot.png');
-    addItem('bug', BUG_COUNT, './img/bug.png')
+    addItem('carrot', CARROT_COUNT, 'img/carrot.png');
+    addItem('bug', BUG_COUNT, 'img/bug.png')
 }
 
 function onFieldClick(event) {
@@ -166,6 +166,21 @@ function addItem(className, count, imgPath) {
         item.style.left = `${x}px`;
         item.style.top = `${y}px`;
         field.appendChild(item);
+    }
+    const mediaViewContent = window.matchMedia(`(max-width: 768px)`);
+    const viewChangeHandler = (mediaViewContent) => {
+        for(let i = 0; i < count; i++) {
+            const item = document.createElement('img');
+            item.setAttribute('class', className);
+            item.setAttribute('src', imgPath);
+            item.style.position = 'absolute';
+            const x = randomNumber(x1, x2);
+            const y = randomNumber(y1, y2);
+            item.style.left = `${x}px`;
+            item.style.top = `${y}px`;
+            field.appendChild(item);
+        }
+        mediaViewContent.addEventListener('change',viewChangeHandler);
     }
 }
 
