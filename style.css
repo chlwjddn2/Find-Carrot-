@@ -114,7 +114,7 @@ button{
     user-select: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
     .main{
         background-image: url(./img/background.png);
         width: 400px;
